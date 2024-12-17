@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function About(){
     return(
-        <section className="w-auto xl:w-[1340px] 2xl:w-auto 2xl:px-20 h-[660px] lg:h-[603px] sm:h-[370px] xl:h-[603px] flex flex-col sm:flex-row bg-white">
-            <div className="w-auto xl:w-[670px] h-[603px] py-[50px] px-5 lg:px-[60px] 2xl:px-[80px] 2xl:py-20">
+        <section className="w-auto xl:w-[1340px] 2xl:w-auto 2xl:px-20 h-[660px] xl:h-[603px] sm:h-[370px] flex flex-col sm:flex-row bg-white">
+            <div className="w-auto xl:w-[670px] h-[603px] xl:py-[50px] px-5 lg:px-[60px] 2xl:px-[80px] 2xl:py-20">
                 <div className="w-auto xl:w-[536px] h-[225px] flex flex-col gap-[25px]">
                     <h1 className="text-[18px] lg:text-[24px] 2xl:text-[32px] font-poppins leading-[140%] text-[#2A254B]">From a studio in London to a global brand with
                     over 400 outlets</h1>
@@ -26,7 +26,12 @@ export default function About(){
                 />
             </div>
             <div className="xl:hidden w-auto h-[603px] -mr-2">
-                <img src="/images/Image.png" alt="" />
+                <Image
+                    src="/images/Image.png"
+                    alt=""
+                    width={720}
+                    height={603}
+                />
             </div>
         </section>
     );

@@ -18,8 +18,8 @@ export default function Footer(){
                                 {link.links.map(link => {
                                     const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
                                     return(
-                                        <li>
-                                            <Link key={link.lable} href={link.href} className="relative flex flex-col group">{link.lable}
+                                        <li key={link.lable}>
+                                            <Link href={link.href} className="relative flex flex-col group">{link.lable}
                                                 <span className={isActive ? "h-[2px] inline-block absolute w-[45%] bg-white -bottom-1" : "h-[2px] inline-block absolute w-0 bg-white -bottom-1 group-hover:w-[45%] transition-[width] ease duration-300"}>&nbsp;</span>
                                             </Link>
                                         </li>
